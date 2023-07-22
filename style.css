@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(to left, #1c87c9 50%, #e35454 50%);
+  
+}
+#main {
+  width: 50%;
+  height: 26vw;
+  margin: 10% auto;
+  text-align: center;
+  background-color: transparent;
+}
+#container {
+  position: relative;
+  top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 29%);
+  grid-column-gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  height: 16vw;
+  margin: 0 auto;
+  
+}
+#opponent {
+  margin: 10% auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#opponent h1 {
+  margin: 0 0;
+  animation: swing 1s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+#just-for-rotation {
+  transform: rotate(-90deg);
+}
+#user {
+  margin: 10% auto;
+  transform: rotate(-90deg);
+}
+#user h1 {
+  margin: 0 0;
+  animation: swing 1s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  0% {
+    transform: rotate(0);
+  }
+}
+
+
+h1 {
+  font-size: 8rem;
+}
+button {
+  width: 8%;
+  height: 2vw;
+  margin: 9% 4%;
+  padding: 1.8rem 6rem;
+  border-radius: 14px;
+  font-size: 1vw;
+  font-weight: 600;    
+  background: rgb(223, 234, 102);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test{
+    margin-top: 3rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 24%);
+    grid-column-gap: 3rem;
+}
