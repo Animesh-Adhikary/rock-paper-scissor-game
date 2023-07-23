@@ -4,8 +4,8 @@ body {
 }
 #main {
   width: 50%;
-  height: 26vw;
-  margin: 10% auto;
+  height: 36vw;
+  margin: 5% auto;
   text-align: center;
   background-color: transparent;
 }
@@ -19,9 +19,18 @@ body {
   justify-content: center;
   text-align: center;
   width: 70%;
-  height: 16vw;
+  height: 25vw;
   margin: 0 auto;
   
+}
+#container h4{
+  font-size: 2vw;
+  margin: 1vw 0;
+}
+#container h2{
+  font-size: 3vw;
+  margin: 0 0;
+  color: rgb(255, 255, 255);
 }
 #opponent {
   margin: 10% auto;
@@ -76,10 +85,18 @@ button {
   align-items: center;
   justify-content: center;
 }
-.test{
+.just-for-grid{
     margin-top: 3rem;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 24%);
     grid-column-gap: 3rem;
+}
+#reset{
+  position: relative;
+  border-radius: 20px;
+  left: 19vw;
+  bottom: 3vw;
+  padding: 1.3rem 4rem;
+  background:rgb(24, 251, 255);
 }
